@@ -469,7 +469,7 @@ li a {
   text-decoration: none;
 }
 
-li.first-child{
+li:first-child{
    margin-top: 0.25rem;
 }
 
