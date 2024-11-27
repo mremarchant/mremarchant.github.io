@@ -481,7 +481,10 @@ li a:hover {
 .dropdown {
   float: right;
   overflow: hidden;
-  line-height: 2rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 
 
