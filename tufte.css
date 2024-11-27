@@ -481,7 +481,9 @@ li a:hover {
 .dropdown {
   float: right;
   overflow: hidden;
+  padding: 1rem 1.5rem;
   margin-top: 0.25rem;
+}
 }
 
 .dropdown .dropbtn { 
