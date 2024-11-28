@@ -452,29 +452,29 @@ label.margin-toggle:not(.sidenote-number) {
 
 
 /*navbar */
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.navbar li {
   float: right;
 }
 
-li a {
+.navbar li a {
   display: block;
   text-align: center;
   padding: 1rem 1.5rem;
   text-decoration: none;
 }
 
-li:first-child{
+.navbar li:first-child{
    margin-top: 0.25rem;
 }
 
-li a:hover {
+.navbar li a:hover {
   text-decoration: underline;
 }
 
