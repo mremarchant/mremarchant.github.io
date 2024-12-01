@@ -10,19 +10,26 @@
 
   <body>
  
-    <!--navbar-->
+ <!--navbar-->
     <div class="navbar">
     <ul>
-      <li><a href="https://mrmarchant.newsblur.com/" target="_blank">BlurBlog RSS</a></li>
+
+      <div class="dropdown">
+        <li class="dropbtn"><li><a href="https://mrmarchant.newsblur.com/" target="_blank">BlurBlog RSS</a></li>
+        <div class="dropdown-content">
+          <a href="rss.html">What's This?</a>
+        </div>
+      </div>
+      
       <li><a href="about.html">About</a></li>
-      <li><a href="#pd">PD</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="PD/index.html">PD</a></li>
+      <li><a href="projects/index.html">Projects</a></li>
       
       <div class="dropdown">
-        <li class="dropbtn"><a href="#courses">Courses</a></li>
+        <li class="dropbtn"><a href="courses/index.html">Courses</a></li>
         <div class="dropdown-content">
-          <a href="#">Computer Science</a>
-          <a href="#">Physics</a>
+          <a href="courses/CompSci/index.html">Computer Science</a>
+          <a href="courses/Physics/index.html">Physics</a>
           <a href="#">TBD...</a>
         </div>
       </div>
@@ -40,7 +47,7 @@
           
           <label for="sn-RSS" class="margin-toggle sidenote-number"></label>
           <input type="checkbox" id="sn-RSS" class="margin-toggle">
-          <span class="sidenote">Really Simple Syndication? Maybe? See <a href="https://en.wikipedia.org/wiki/RSS">Wikipedia.</a></span>
+          <span class="sidenote">Really Simple Syndication? Maybe? See <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">Wikipedia.</a></span>
           
           is an XML protocol that allows websites to broadcast and organize updates. Instead of relying on algorithmic feeds, RSS aggregators can build a custom feed directly from these updates.</p>
 
