@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>MrMarchant</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="description" content="teacher page, mostly STEM, ethics">
     <meta name="keywords" content="Education, STEM, Teaching">
     <meta name="author" content="Eamon Marchant">
@@ -10,19 +11,26 @@
 
   <body>
  
-    <!--navbar-->
+ <!--navbar-->
     <div class="navbar">
     <ul>
-      <li><a href="https://mrmarchant.newsblur.com/" target="_blank">BlurBlog RSS</a></li>
+
+      <div class="dropdown">
+        <li class="dropbtn"><li><a href="https://mrmarchant.newsblur.com/" target="_blank">BlurBlog RSS</a></li>
+        <div class="dropdown-content">
+          <a href="rss.html">What's This?</a>
+        </div>
+      </div>
+      
       <li><a href="about.html">About</a></li>
-      <li><a href="#pd">PD</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="PD/index.html">PD</a></li>
+      <li><a href="projects/index.html">Projects</a></li>
       
       <div class="dropdown">
-        <li class="dropbtn"><a href="#courses">Courses</a></li>
+        <li class="dropbtn"><a href="courses/index.html">Courses</a></li>
         <div class="dropdown-content">
-          <a href="#">Computer Science</a>
-          <a href="#">Physics</a>
+          <a href="courses/CompSci/index.html">Computer Science</a>
+          <a href="courses/Physics/index.html">Physics</a>
           <a href="#">TBD...</a>
         </div>
       </div>
