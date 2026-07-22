@@ -168,6 +168,36 @@
 
             <h2>Compression</h2>
 
+            <h3>Acceptable Imperfections</h3>
+            <p>We can only send so many bits at a time. Data travels as a part of infrastructure like water and
+                electricity and is subject to the physical constraints that dictate decision making in those processes.
+                It is imperative that we use each bit efficiently to transmit the most information possible under those
+                limits. The main tool to do this is compression, when the data is rewritten using fewer 1s and 0s. This
+                could be done by looking for patterns in the data that can be communicated more efficiently or by
+                removing details that are not relevant to the end user. </p>
+            <p>Compression strategies fall under the general strategy of using heuristics. A heuristic is a way to
+                approach a problem when an exact solution isn’t possible, perhaps due to time or other constraints.
+                Instead, a heuristic is good enough, and hopefully better than nothing. This is essential in compression
+                since needing compression at all already implies that there will be some sort of limitations on the
+                process. In addition, since every digital file is different, it would be inefficient to create unique
+                compression algorithms for each one.</p>
+
+            <h3>Lossy and Lossless</h3>
+            <p>The most effective compression strategies (in terms of reducing bits) are typically lossy. The term means
+                exactly what it says - files that undergo lossy compression are shrunken down but can never be perfectly
+                brought back to their original state. Something is lost. For example, if a high definition movie is
+                saved at a lower resolution to work on a phone or upload quicker online, that new file will not have the
+                same resolution and can’t be perfectly upscaled back to how it started. Similar to encoding, this can be
+                done where a human might not notice the difference. The lost pixels of frequencies might be
+                imperceivable or they might be worth the loss for the sake of saving memory on a space-limited device.
+                However, this process can be devastating for archival or research purposes. Since the original bits are
+                irretrievable, the original data might not be accurately understood.</p>
+            <p>In contrast, there are compression strategies that are lossless, though they are typically not as
+                effective as lossy in saving bits. But there are some circumstances where absolutely no loss is
+                acceptable, like text files. You would not want an email you send to have random typos appear due to how
+                it was compressed, so text will always be compressed losslessly, especially since text is fairly low
+                memory compared to media like video. </p>
+
             <figure class="iframe-wrapper">
                 <iframe
                     src="https://docs.google.com/presentation/d/e/2PACX-1vTJQJNsPfakTGpl0b4P2kfjBRKXjM6JRDy14vWdaU4e6EF5yn75d-yNyj3fW6Xcco_yiexxZWHhBk3V/pubembed?start=false&loop=false&delayms=3000"
