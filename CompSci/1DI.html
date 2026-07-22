@@ -113,6 +113,52 @@
 
             <h2>Encoding</h2>
 
+            <h3>Communication Magic</h3>
+            <p>Computers are fantastic tools to transfer data from one place to another, but that isn’t useful unless
+                that data is transformed into information. We sandwich the data transmission with context to parse what
+                is being transmitted. First all parties involved go through a setup phase where any prerequisite details
+                are covered. For something like an in-person conversation this would be the where, when, and even
+                details like what language would be used. Computers need to establish things like what represents a 1
+                and a 0 in terms of voltage or what frequency to read the signals being set.</p>
+            <p>Once the data is sent the receiver will need to process it into information through an outcome phase. You
+                are doing that right now at different levels! Your device is taking the electrical signals and
+                calculating what colors to turn the lights on the screen to. Your brain is taking those lights as
+                letters and symbols and then processing it yet another time to turn that into knowledge! This also
+                highlights why abstraction is an essential process in Computer Science - if we had to mention this full
+                transformation of digital signals into information when covering all digital communication, it would
+                take an unreasonable amount of time.</p>
+
+            <h3>Numbers to Letters (or Anything)</h3>
+            <p>One of the easiest encoding systems to understand is text. Abstracting away the signal processing aspect,
+                computers will use a key that gives each symbol its own unique set of binary values. For example, in
+                ASCII the capital A is represented using 0100 0001 (or just 65 in decimal). For other symbols or
+                languages, other keys like Unicode might be necessary, but the mechanics are always the same: a set
+                length of binary is translated using a dictionary into the proper symbol.</p>
+            <p>This same process works for other mediums as well. A simple black and white image could use the 1s and 0s
+                to represent black and white or a video game could use a dictionary like ASCII that instead represents
+                different locations on a map. For a system that only needs values, the binary could just be directly
+                converted into decimal or hexadecimal.</p>
+
+            <h3>Sampling</h3>
+            <p>Very few things can be perfectly replicated with discrete binary. Sight and sound, for example, are
+                composed of continuous waveforms that can never be perfectly sliced into clean bits. When we need to
+                turn this continuous analog data into something on a computer, we use a technique called sampling to
+                turn it into digital chunks. For example, a picture is a set of pixels made from a continuous, real-life
+                sight. A continuous sound wave can be discretized by taking the frequency of the note playing at regular
+                intervals so it can be stored as numbers.</p>
+            <p>Sampling can never be a perfect representation of the original analog data. You can’t zoom infinitely
+                into a digital image and the sound being captured might lose details in the timbre or peak frequencies
+                if they don’t align with the sample rate. But with modern technology, that might not matter! There is a
+                limit to our human perception so sometimes the data lost via sampling won’t actually be noticeable to
+                the observer.</p>
+
+            <h3>Metadata</h3>
+            <p>A computer file will need to carry a lot of context with it for it to be properly opened and understood.
+                For example an image file needs to communicate the dimensions of the image and how the bits get turned
+                into color. In addition, categorical information like the date a file was made or the author of a text
+                need to travel as part of the total package of data. This additional information is called metadata, it
+                is data about the data. </p>
+
             <figure class="iframe-wrapper">
                 <iframe
                     src="https://docs.google.com/presentation/d/e/2PACX-1vR_T_8SKNQYdA_LPopQNQnZ4EVvqsb5zOvt2JJqNmeDSecGQDmy_NAA5rlOKtbgHe9juh768WdeL_fR/pubembed?start=false&loop=false&delayms=3000"
