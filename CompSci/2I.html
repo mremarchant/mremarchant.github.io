@@ -73,6 +73,31 @@
             </p>
 
             <h3>Delivery Service</h3>
+            <p>Files are too big to be sent all in one piece. Even something as simple as text carries bytes of metadata
+                that can make it unwieldy, especially with the metadata required for networking like IP addresses. To
+                solve this problem, files are divided up into multiple packets of bits, each with their own label of
+                networking metadata. This metadata will have the addresses and also some sort of secure delivery
+                protocol. The most common secure protocol is TCP, transmission control protocol. This works just like
+                sending a large physical package. Each packet is labeled with two numbers: its own unique number and the
+                total number of packets in the file, like packet six out of seven. That way the receiving computer can
+                both put the files back in order and ensure that every file was delivered properly. </p>
+            <p>TCP is useful since it ensures accurate delivery, but it does come at the cost of time. Some files don’t
+                need perfection, like streaming media or a time-sensative game. These files could use UDP, the user
+                datagram protocol which is a firehose of data - a heuristic that prioritizes speed over accuracy. You
+                probably wouldn’t notice a missing frame in a video but you would have noticed it pausing to load
+                perfectly if it was using TCP.</p>
+            <p>Where does this risk of incorrect transmission come from? Part of it is just the reality of physical
+                infrastructure. Wires can break, ports can fail, and even sea animals could interfere with the undersea
+                cables. But another factor is how individual packets are routed through the network. Traffic online is
+                managed through computers called routers which operate much like a post office. You send them a packet
+                with the destination labeled on it and the routers make the best choice at the time on how to send your
+                packet. They might avoid traffic and go around accidents like an actual postal service, but this does
+                mean your different packets will arrive out of order at different times.</p>
+            <p>This system can seem inefficient at first glance - sending packages with the same start and end points
+                along different routes doesn’t feel right at first. But the strength of routing is its robustness
+                provided by this redundancy. If a single router fails, the other devices in the network can work around
+                it. This does take a bit of an investment to have these additional routers and wires, but it is worth it
+                to have a reliable internet. No one would use an unreliable network! </p>
 
 
             <figure class="iframe-wrapper">
