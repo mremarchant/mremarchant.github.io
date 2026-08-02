@@ -127,6 +127,20 @@
                 \[\lim_{x\to \infty}\ln(x) = \infty\] This graph might be increasing at a slowing rate, but it is
                 increasing nonetheless!</p>
 
+            <p>Dealing with infinite limits of quotients can be a fun logic puzzle! Consider: \[\lim_{x\to \infty}{x^7 +
+                3x^4 - 2x + 1\over 5x^4 - 2x^3 -2}\] Our toolbox so far doesn’t present a lot of options. There are no
+                efficient ways to factor this and it isn’t even clear if there are any holes or asymptotes to consider
+                at first glance. But since we are going to infinity, we don’t need to really worry about all the small
+                things! Instead, let’s focus only on the leading terms in the numerator and denominator (assuming the
+                function is written in order): \(x^7\) and \(5x^4\). As we tend towards infinity, those will be the only
+                significant terms for a couple of reasons. First is that if we were to “plug in” \(\infty\) to the
+                function, those have the highest powers and even though it's nonsensical to say multiplying by more
+                infinities makes something larger, it does have a logic to it. More rigorously, we could divide both the
+                top and bottom of the fraction by \(x^7\) which will leave most terms with negative exponents on the
+                \(x\) and anything divided by infinity will tend away towards \(0\). This would leave us with a leading
+                \(x^3\) term, which as a positive, odd function will be increasing towards infinity which leads to a
+                solution of \(\infty\).</p>
+
             <h3>The Squeeze Theorem</h3>
             <p></p>
 
