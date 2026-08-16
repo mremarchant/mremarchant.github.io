@@ -71,6 +71,14 @@
                 cases where the textual definition intuitively matches its mathematical setup: the change in the output
                 divided by the change in the input, \[m = {\Delta y \over \Delta x}\] Or if using function notation with
                 a change of \(h\): \[m = {f(x + h) - f(x) \over h}\]</p>
+            <p>That setup works well for linear situations, but it doesn’t capture the full story for anything changing
+                at a dynamic rate. For example, consider an object falling from 100 meters up! Its ideal trajectory
+                would be modeled as \(y(t) = -9.81t^2 + 100\). Consider what happens in the first second, from \(t = 0
+                s\) to \(t = 1 s\). It will go from \(100 m\) to \( 90.19 m\) for a change of \(-9.81 {m \over s^2}\).
+                But then what if we redo the math from \(t = 0 s\) to \(t = 2 s\)? It results in a change of \(-19.62 {m
+                \over s^2}\). We can still learn the average value for the rate of change (which in this case is
+                velocity), but it would fail to show how the object is accelerating towards the ground and that the rate
+                is changing from one instant to the next.</p>
 
             <h3>The Derivative</h3>
             <p></p>
