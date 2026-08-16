@@ -74,11 +74,19 @@
             <p>That setup works well for linear situations, but it doesn’t capture the full story for anything changing
                 at a dynamic rate. For example, consider an object falling from 100 meters up! Its ideal trajectory
                 would be modeled as \(y(t) = -9.81t^2 + 100\). Consider what happens in the first second, from \(t = 0
-                s\) to \(t = 1 s\). It will go from \(100\; m\) to \( 90.19\; m\) for a change of \(-9.81 {m \over s^2}\).
+                s\) to \(t = 1 s\). It will go from \(100\; m\) to \( 90.19\; m\) for a change of \(-9.81 {m \over
+                s^2}\).
                 But then what if we redo the math from \(t = 0 s\) to \(t = 2 s\)? It results in a change of \(-19.62 {m
                 \over s^2}\). We can still learn the average value for the rate of change (which in this case is
                 velocity), but it would fail to show how the object is accelerating towards the ground and that the rate
                 is changing from one instant to the next.</p>
+            <p>There are a lot of situations where the average rate is adequate, especially in the case of real world
+                data collection where those moments in between would only ever be inferred. But if an instantaneous rate
+                can be found, it can be a remarkably powerful tool for analyzing how something behaves and changes over
+                time. An instant would be a situation where the rate of change is calculated over an infinitesimal
+                amount, as the value of \(h\) is essentially \(0\). Since directly using \(0\) would lead to an
+                indeterminate form, we instead calculate instantaneous change using limits: \[\lim_{h\to 0} {f(x + h) -
+                f(x) \over h}\]</p>
 
             <h3>The Derivative</h3>
             <p></p>
